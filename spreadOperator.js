@@ -10,10 +10,8 @@ const arrayOfStrings1 = ['is', 'Andrew'];
 const arrayOfStrings2 = ['Your', 'name', ...arrayOfStrings1, 'Dolan'];
 //  Convert the array into a string (which will contain commas)
 const stringSentence = arrayOfStrings2.toString();
-console.log('Stringsentence', stringSentence)
 //  Split the string at the the commas and form a new array
 const splitSentence = stringSentence.split(',');
-console.log('Split sentence', splitSentence)
 //  Convert that array back into a string with an empty string between each element
 const joinedSentence = splitSentence.join(' ')
 
