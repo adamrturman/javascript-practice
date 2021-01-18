@@ -25,7 +25,7 @@ const arrayOfStrings3 = ['is', 'Adam'];
 const arrayOfStrings4 = ['My', 'name', ...arrayOfStrings3, 'Turman'];
 //  Convert the array into a string
 const sentenceWithCommas2 = arrayOfStrings4.toString()
-//  The commas will still be there, so instead of
+//  The commas will still be there, so use a regular expression to replace them with empty strings
 const normalSentence2 = sentenceWithCommas2.replaceAll(/,/gm, ' ');
 
 console.log(printSentence(normalSentence2));
