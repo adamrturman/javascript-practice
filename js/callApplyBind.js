@@ -73,6 +73,7 @@ const boundSingleResume = singleResume.bind(person1);
 const boundMultipleResume = multipleResume.bind(person2)
 
 console.log("How old was I in 2013?", ageOnEvent.call(person1, 2013))   //  returns 25
+console.log("How old was I in 1993, 1997 and 2016?", agesOnEvent.call(person1, 1993, 1997, 2016))   //  returns 25
 console.log("Am I hungry?", ateMeal.call(person1))  //  returns false
 console.log("How old was Joey in 2007, 2011, and 2015?", agesOnEvent.apply(person2, dateArray)) //  returns 14, 18, 22
 console.log("What jobs are on my resume?", boundSingleResume("teacher"))    //  returns ["teacher"]
