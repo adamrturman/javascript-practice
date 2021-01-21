@@ -72,3 +72,5 @@ for (let something in object2) {
     if(object2.hasOwnProperty(something) && typeof object2[something] !== "function")
     console.log(object2[something])
 }
+
+//  ^ Now only Hi - Morning - greeting are shown
